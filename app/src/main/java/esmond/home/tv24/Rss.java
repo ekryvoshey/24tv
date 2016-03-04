@@ -23,7 +23,7 @@ public class Rss {
     private String creator;
     @Element (name = "image")
     private Image image;
-    @ElementList(name = "item")
+    @ElementList(inline=true)
     private List<Item> item;
 
     public List<Item> getItems() {

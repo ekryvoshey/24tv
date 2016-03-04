@@ -4,4 +4,7 @@
 
     <string name="url_news_xml">http://24tv.ua/rss/all.xml</string>
     <string name="response_file_name">24_all.xml</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="refresh_started">Оновлення свиску новин</string>
+    <string name="refresh_finished">Оновленно</string>
 </resources>
