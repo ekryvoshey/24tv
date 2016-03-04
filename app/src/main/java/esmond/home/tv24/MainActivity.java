@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             public void run() {
                 swipeLayout.setRefreshing(false);
             }
-        }, 3000);
+        }, 1500);
         run();
         Toast.makeText(this, R.string.refresh_finished, Toast.LENGTH_SHORT).show();
     }

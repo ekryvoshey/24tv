@@ -43,8 +43,9 @@ public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.NewsVi
             }
         });
         holder.newsTitle.setText(items.get(i).getTitle());
-        String newDate = items.get(i).getDate().substring(0, 10);
-        holder.newsDate.setText("Опубліковано: "+(newDate));
+        String[] newDate = (items.get(i).getDate().split("T"));
+        String newTime = newDate[1].substring(0, 5);
+        holder.newsDate.setText("Опубліковано: "+newTime+"/"+(newDate[0]));
         Glide.with(context).load(items.get(i).getUrl()).into(holder.newsImage);
     }
 
